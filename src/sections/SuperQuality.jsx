@@ -1,4 +1,5 @@
 import Button from "../components/Button";
+import shoe8 from "../assets/images/shoe8.svg"
 
 const SuperQuality = () => {
   return (
@@ -7,22 +8,28 @@ const SuperQuality = () => {
       className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container"
     >
       <div className="flex flex-1 flex-col">
-        <p className="text-xl font-montserrat text-coral-red">
-          Our Summer Collection
+        <h2 className="mt-18 font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
+          We Provide You
+          <span className="text-coral-red"> Super</span>
+          <span className="text-coral-red"> Quality</span> Shoes
+        </h2>
+        <p className="mt-4 lg:max-w-lg info-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+          explicabo recusandae sapiente natus, voluptatum numquam consequuntur
+          possimus porro iusto debitis nesciunt commodi nostrum accusamus
+          necessitatibus quibusdam sequi excepturi libero veniam!
         </p>
-        <h1 className="mt-18 font-palanquin text-8xl max-sm:text-[72px] max-sm:leadig-[82] font-bold">
-          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">
-            The New Arrival
-          </span>
-          <br />
-          <span className="text-coral-red inline-block mt-3">Nike</span> Shoes
-        </h1>
-        <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
-          Discover stylish Nike arrivals, quality confort, and innovation for
-          your active life.
+        <p className="mt-6 lg:max-w-lg info-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
         </p>
 
-        <Button label="View Details" />
+        <div className="mt-11">
+          <Button label="View Details" />
+        </div>
+      </div>
+
+      <div className="flex-1 flex justify-center items-center">
+        <img src={shoe8} alt="Shoe8" width={570} height={522}/>
       </div>
     </section>
   );
